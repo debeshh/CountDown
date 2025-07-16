@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="countdown-svgrepo-com.svg" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Timer Heading
+        day hr min second blocks
+        progress Heading
+        progress bar -->
+
+        <div id="input">
+            <label for="date">choose date & time</label>
+            <input type="datetime-local" id="date">
+            <button onclick="setCustomDate()">Start Countdown</button>
+        </div>
+
+        
+
+        <h1>Count Down Timer</h1>
+
+        <div id="countdown">
+            <div>
+                <span id="days">00</span>
+                Days
+            </div>
+            <div>
+                <span id="hours">00</span>
+                Hrs
+            </div>
+            <div>
+                <span id="minute">00</span>
+                min
+            </div>
+            <div>
+                <span id="second">00</span>
+                sec
+            </div>
+        </div>
+        <h2>Progress:</h2>
+        <div class="progress-container">
+            <div id="progressbar"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
